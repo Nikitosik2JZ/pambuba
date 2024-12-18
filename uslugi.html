@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/uslugi.css">
+    
+    <title>Услуги</title>
+</head>
+<body>
+    <div class="mainhead">
+        <div class="logo"><a href=index.html>Тим.Доставка</a></div>
+        <div class="aboutus"><a href="about.html">О нас</a></div>
+        <div class="uslugi"><a href="uslugi.html">Услуги</a></div>
+    </div>
+    <div class="first">
+        <div class="context1">Мы предлагаем быструю и надежную доставку еды из лучших ресторанов, свежих продуктов и среднегабаритных грузов прямо к вашему порогу.</div>
+        <div class="context2">Преимущества выбора нашей доставки:<br>
+            1.Быстрая доставка(~45мин.)<br>
+            2.Широкий выбор ресторанов/товаров<br>
+            3.Качественная и безопасная упаковка и доставка<br>
+            4.Отсутствие скрытых платежей
+        </div>
+        <div class="fiol">
+            <div class="outpred">
+                <div class="inpred">Мы предлагаем</div>
+                <div class="megaimage">
+                    <img src="img/korobka.png">
+                    <div class="description">Стандартная доставка</div>
+                </div>
+                <div class="megaimage">
+                    <img src="img/express.png">
+                    <div class="description">Экспресс доставка</div>
+                </div>
+                <div class="megaimage">
+                    <img src="img/time.png">
+                    <div class="description">Доставка ко времени</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-container">
+        <h2>Заполните форму </h2>
+        <form id="myForm">
+            <div class="form-group">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Номер телефона:</label>
+                <input type="tel" id="phone" name="phone"  placeholder="Введите номер без пробелов">
+            </div>
+            <div class="form-group">
+                <label for="service">Выберите вариант:</label>
+                <select id="service" name="service" required>
+                    <option value="" disabled selected>Выберите вариант</option>
+                    <option value="express">Экспресс</option>
+                    <option value="standard">Стандарт</option>
+                    <option value="on_time">Ко времени</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="product">Товар:</label>
+                <input type="text" id="product" name="product" required>
+            </div>
+            <button type="submit">Отправить</button>
+        </form>
+        <div class="message" id="responseMessage" style="display:none;"></div>
+    </div>
+    <script src="js/message.js"></script>
+    <button class="scrollToTop" id="scrollToTopBtn">&uarr;</button>
+    <script src="js/buttomUp.js"></script>
+    <footer>
+        <div class="footlogo">Тим.Доставка</div>
+        <div class="copyright">©2024</div>
+        <div class="timeopen">График работы: Работаем круглосуточно без выходных</div>
+        <div class="footuslugi"><a href="uslugi.html">Услуги</a></div>
+        <div class="footaboutus"><a href="about.html">О нас</a></div>
+    </footer>
+</body>
+</html>

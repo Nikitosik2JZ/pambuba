@@ -1,0 +1,175 @@
+.first{
+display: flex;
+position: absolute;
+width: 1120px;
+height: 1350px;
+left: calc(50% - 1120px/2);
+top: 364px;
+
+background: #FFFFFA;
+border-radius: 100px;
+}
+
+.context1{
+position: absolute;
+width: 900px;
+height: 330px;
+left: calc(50% - 900px/2);
+top: 100px;
+
+font-family: 'Times New Roman';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 55px;
+display: flex;
+align-items: center;
+
+color: #000000;
+}
+
+
+.context2{
+position: absolute;
+width: 931px;
+height: 500px;
+left: calc(50% - 931px/2 + 0.5px);
+top: 435px;
+
+font-family: 'Times New Roman';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 46px;
+display: flex;
+align-items: center;
+
+color: #000000;
+}
+.fiol{
+display: flex;
+position: absolute;
+width: 1120px;
+height: 400px;
+
+bottom: 0;
+justify-content: center;
+align-items: center;
+background: #FCCB06;
+border-radius: 50px;
+}
+.outpred{
+display: flex;
+justify-content: center;
+position: absolute;
+width: 400px;
+height: 100px;
+
+top: 16px;
+
+background: #000000;
+border-radius: 50px;
+}
+
+.inpred{
+
+position: absolute;
+
+height: 100px;
+
+top: 0px;
+
+font-family: 'Times New Roman';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 55px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FCCB06;
+}
+.megaimage{
+    top:60px;
+    position: relative;
+    display: inline-block;
+    margin: 70px;
+    color:white ;
+}
+.megaimage img{
+    width: 200px; 
+    height: auto; 
+    border-radius: 10px; 
+}
+.description {
+    position: absolute;
+    top:0px;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9); 
+    color: #FCCB06;
+
+    padding: 10px; 
+    text-align: center; 
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+    font-size: 30px;
+    border-radius: 10px;
+}
+.megaimage:hover .description{
+    opacity: 1;
+}
+.form-container {
+    
+    position: absolute;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 1000px;
+    top:1800px;
+    border-radius: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.message {
+    font-size: 40px;
+    margin-top: 20px;
+    color: #333;
+}
+footer{
+    top:2500px;
+}
