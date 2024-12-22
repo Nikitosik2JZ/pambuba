@@ -14,31 +14,43 @@
         <div class="aboutus"><a href="about.html">О нас</a></div>
         <div class="uslugi"><a href="uslugi.html">Услуги</a></div>
     </div>
-    <div class="first">
-        <div class="context1">Мы предлагаем быструю и надежную доставку еды из лучших ресторанов, свежих продуктов и среднегабаритных грузов прямо к вашему порогу.</div>
-        <div class="context2">Преимущества выбора нашей доставки:<br>
-            1.Быстрая доставка(~45мин.)<br>
-            2.Широкий выбор ресторанов/товаров<br>
-            3.Качественная и безопасная упаковка и доставка<br>
-            4.Отсутствие скрытых платежей
-        </div>
-        <div class="fiol">
-            <div class="outpred">
-                <div class="inpred">Мы предлагаем</div>
-                <div class="megaimage">
-                    <img src="img/korobka.png">
-                    <div class="description">Стандартная доставка</div>
-                </div>
-                <div class="megaimage">
-                    <img src="img/express.png">
-                    <div class="description">Экспресс доставка</div>
-                </div>
-                <div class="megaimage">
-                    <img src="img/time.png">
-                    <div class="description">Доставка ко времени</div>
-                </div>
-            </div>
-        </div>
+    <div class="container">
+        <header>
+          <h1>Наши услуги доставки</h1>
+          <p>Мы предлагаем быструю и надежную доставку еды из лучших ресторанов, свежих продуктов и среднегабаритных грузов прямо к вашему порогу.</p>
+        </header>
+        
+        <section class="services">
+          <div class="service">
+            <img src="img/express.png" alt="Экспресс-доставка" class="service-image">
+            <h2>Экспресс-доставка</h2>
+            <p>Идеальный выбор для срочных заказов. Доставка за минимальное время — от 30 до 45 минут. Понадобилось быстро получить еду или товар? Экспресс-доставка обеспечит моментальный отклик и доставит все в срок, чтобы вы не ждали.</p>
+          </div>
+          <div class="service">
+            <img src="img/korobka.png" alt="Стандартная доставка" class="service-image">
+            <h2>Стандартная доставка</h2>
+            <p>Отличное решение для повседневных покупок и заказов. Доставка в течение 2–3 часов. Если вам не нужно торопиться, а просто хочется удобно заказать любимые продукты или блюда, этот вариант идеально подойдет.</p>
+          </div>
+          <div class="service">
+            <img src="img/time.png" alt="Доставка ко времени" class="service-image">
+            <h2>Доставка ко времени</h2>
+            <p>Удобство выбора точного времени доставки. Мы понимаем, что время — это ценность, и поэтому предлагаем возможность выбрать момент, когда доставка будет максимально удобна для вас. Мы гарантируем пунктуальность и четкое соблюдение сроков.</p>
+          </div>
+        </section>
+    
+        <section class="advantages">
+          <h2>Почему выбирают нас?</h2>
+          <ul>
+            <li><strong>Быстрая доставка (~45 минут):</strong> Меньше ожидания, больше удобства.</li>
+            <li><strong>Широкий выбор:</strong> Рестораны, товары, свежие продукты.</li>
+            <li><strong>Качественная упаковка:</strong> Доставляем в лучшем виде.</li>
+            <li><strong>Прозрачные цены:</strong> Без скрытых платежей и комиссий.</li>
+            <li><strong>Удобство и надежность:</strong> Стабильность — наш главный приоритет.</li>
+            <li><strong>Гибкость в выборе времени:</strong> Мы подстраиваемся под ваши потребности.</li>
+            <li><strong>Доступность для всех:</strong> Мы обслуживаем как частных клиентов, так и бизнес.</li>
+            <li><strong>Опыт и надежность:</strong> Мы знаем, как обеспечить качественную доставку.</li>
+          </ul>
+        </section>
     </div>
     <div class="form-container">
         <h2>Заполните форму </h2>
@@ -64,19 +76,54 @@
                 <label for="product">Товар:</label>
                 <input type="text" id="product" name="product" required>
             </div>
-            <button type="submit">Отправить</button>
+            <button class="btnform" type="submit">Отправить</button>
         </form>
         <div class="message" id="responseMessage" style="display:none;"></div>
     </div>
     <script src="js/message.js"></script>
+
+    <div class="faqfr">
+        <div class="faqtxt">Ответы на часто задаваемые вопросы</div>
+        <div class="faq">
+            <div class="faq-item">
+              <button class="faq-question">Когда можно оформить заказ? <span class="toggle">+</span></button>
+              <div class="faq-answer">
+                Наш сервис работает круглосуточно, поэтому заказ можно оформить в любое удобное для вас время
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">Сколько стоит доствка от пункта А до пункта Б?<span class="toggle">+</span></button>
+              <div class="faq-answer">
+                От 199 рублей. Точная стоимость уточняется при консультации со специалистом по телефону
+              </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Можно ли стать курьером?<span class="toggle">+</span></button>
+                <div class="faq-answer">
+                  Конечно можно! Для этого перейдите на страницу <a href="curier.html" style="color:green">«Стать курьером»</a>, ознакомтесь с требованиями и заполните анкету 
+                </div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-question">Сколько по времени занимает доставка?<span class="toggle">+</span></button>
+                <div class="faq-answer">
+                  Экспресс доставка ~ 30 минут, Стандартная доставка ~ 1 час
+                </div>
+              </div>
+          </div>
+          <script src="js/faq.js"></script>
+    </div>
+    <footer>
+        <div class="infoot">
+            <div class="footlogo">Тим.Доставка</div>
+            <div class="copyright">©2024</div>
+            <div class="timeopen">График работы: Работаем круглосуточно без выходных</div>
+            <div class="footuslugi"><a href="uslugi.html">Услуги</a></div>
+            <div class="footaboutus"><a href="about.html">О нас</a></div>
+            <div class="footcurier"><a href="curier.html">Стать курьером</a></div>
+        </div>
+    </footer>
+
     <button class="scrollToTop" id="scrollToTopBtn">&uarr;</button>
     <script src="js/buttomUp.js"></script>
-    <footer>
-        <div class="footlogo">Тим.Доставка</div>
-        <div class="copyright">©2024</div>
-        <div class="timeopen">График работы: Работаем круглосуточно без выходных</div>
-        <div class="footuslugi"><a href="uslugi.html">Услуги</a></div>
-        <div class="footaboutus"><a href="about.html">О нас</a></div>
-    </footer>
 </body>
 </html>

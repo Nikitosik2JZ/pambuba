@@ -1,20 +1,99 @@
 
-.mainch {
-    position: absolute;
-    top:300px;
-    line-height: 1.6;
-    width: 1320px;
-    height: 780px;
-    margin: auto;
-    background-color:white;
-    padding: 20px;
-    border-radius: 5px;
-    font-size: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    justify-content: center;
+.container {
+  width: 1080px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  position: absolute;
+  top:250px;
+  border-radius: 25px;
 }
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  color: #000;
+}
+
+/* Раздел "О нас" */
+.about h2 {
+  color: #000;
+  border-bottom: 2px solid #27ae60;
+  padding-bottom: 10px;
+}
+
+.about p, .about ul {
+  color: #333;
+  font-size: 1.1em;
+}
+
+.about ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.about ul li {
+  margin-bottom: 10px;
+}
+
+.about ul li::before {
+  content: "•";
+  color: #27ae60;
+  font-size: 1.5em;
+  margin-right: 10px;
+}
+
+/* Раздел "Контакты" */
+.contact h2 {
+  color: #000;
+  border-bottom: 2px solid #27ae60;
+  padding-bottom: 10px;
+  margin-top: 30px;
+}
+
+.contact p {
+  color: #333;
+  font-size: 1.1em;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-links a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-links a:hover {
+  color: #27ae60;
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.contact h3 {
+  margin-top: 30px;
+  font-size: 1.2em;
+  color: #000;
+}
+
+
 footer{
-    top:1200px;
+    top:1300px;
 }
 .modal {
     display: none;
@@ -82,8 +161,17 @@ button.cancel {
     color: white;
   }
 .feedbackbtn{
-    position: absolute;
-    background-color: #1cd922;
+  background-color: #27ae60;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .feedbackbtn:hover{
     background-color: #349237;
